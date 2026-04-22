@@ -1,0 +1,110 @@
+/* Root Variables */
+:root {
+  --primary: #007bff;
+  --primary-dark: #0056b3;
+  --bg: #f4f6f8;
+  --card-bg: #ffffff;
+  --text: #333;
+  --border: #ddd;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Root */
+#root {
+  min-height: 100vh;
+}
+
+/* Center container (Login/Register) */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;   /* ✅ FIX */
+}
+
+/* Dashboard container */
+.container.dashboard {
+  align-items: flex-start;   /* top alignment */
+  padding-top: 40px;
+}
+
+/* Card */
+.card {
+  background: var(--card-bg);
+  padding: 25px;
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  outline: none;
+}
+
+/* Focus */
+input:focus {
+  border-color: var(--primary);
+}
+
+/* Buttons */
+button {
+  width: 95%;
+  padding: 10px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Hover */
+button:hover {
+  background: var(--primary-dark);
+}
+
+/* Links */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Text */
+p {
+  margin-top: 10px;
+}
+
+/* Section spacing (dashboard) */
+h3 {
+  margin-top: 20px;
+}

@@ -1,0 +1,186 @@
+/* Body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+/* Center container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Dashboard layout */
+.container.dashboard {
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 25px;
+  width: 340px; /* थोड़ा बढ़ाया */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* subtle hover */
+.card:hover {
+  transform: scale(1.01);
+}
+
+/* Headings */
+.card h2 {
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Focus */
+input:focus {
+  border-color: #007bff;
+}
+
+/* Buttons */
+button {
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 95%;
+  font-weight: bold;
+}
+
+/* Hover */
+button:hover {
+  background: #0056b3;
+}
+
+/* Links */
+p {
+  margin-top: 15px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Section titles */
+h3 {
+  margin-top: 20px;
+}
+
+/* ========================= */
+/* 🔥 DASHBOARD SECTIONS */
+/* ========================= */
+
+.section {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.section input {
+  margin: 8px auto;
+}
+
+.section button {
+  margin-top: 10px;
+}
+
+/* Logout button */
+.logout-btn {
+  background: #ff4d4d;
+}
+
+.logout-btn:hover {
+  background: #cc0000;
+}
+
+/* ========================= */
+/* 🔥 MODERN LOGIN PAGE */
+/* ========================= */
+
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* LEFT SIDE */
+.login-left {
+  flex: 1;
+  background: #eef2f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-left img {
+  width: 70%;
+  max-width: 400px;
+}
+
+/* RIGHT SIDE */
+.login-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form inputs */
+.login-right input {
+  width: 300px;
+  margin: 10px;
+}
+
+/* Button */
+.login-right button {
+  width: 320px;
+  border-radius: 25px;
+  background: linear-gradient(to right, #4facfe, #007bff);
+}
+
+/* Register link */
+.login-right span {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-left {
+    display: none;
+  }
+}
